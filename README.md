@@ -19,3 +19,6 @@ sessions#logout
 -Confirm user is logged in
 GET	/logged_in(.:format)	
 sessions#logged_in
+
+/GET /items
+returns items
