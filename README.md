@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-root path
+GET	/	
+static#home
 
-Things you may want to cover:
+-creates a session
+POST	/sessions(.:format)	
+sessions#create
 
-* Ruby version
+-registers a user 
+/registrations(.:format)	
+registrations#create
 
-* System dependencies
+-Logout a user
+DELETE	/logout(.:format)	
+sessions#logout
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-Confirm user is logged in
+GET	/logged_in(.:format)	
+sessions#logged_in
